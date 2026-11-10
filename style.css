@@ -1,4 +1,8 @@
-
+:root {
+    --background:#e5f5f9;
+    --primary:#99d8c9;
+    --secondary:#003b18;
+}
 * {
     box-sizing: border-box;
 }
@@ -7,6 +11,7 @@ body {
     margin: 0;
     padding-top: 70px;
     font-family: Arial, sans-serif;
+    background-color: var(--background);
 }
 
 header {
@@ -15,7 +20,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #1a1a1a;
+    background-color: var(--secondary);
 }
 
 nav {
@@ -90,7 +95,7 @@ section {
 .project-button {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #333;
+    background-color: var(--secondary);
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -129,8 +134,8 @@ section {
 }
 
 .skill img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
 }
 
@@ -151,4 +156,41 @@ section {
     padding-right: 50px;
     flex-shrink: 0;
 }
+
+
+#contact {
+    padding: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    flex-wrap: wrap;
+}
+
+.contact-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-item img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.contact-item p {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    opacity: 0.7;
+}
+
 
