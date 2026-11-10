@@ -57,3 +57,47 @@ section {
 .about-text {
     flex: 1;
 }
+
+#projects {
+    padding: 40px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card img {
+    width: 220px;
+    object-fit: contain;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.project-card a {
+    margin-top: auto;
+}
+
+.project-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.project-button:hover {
+    background-color: #555;
+}
