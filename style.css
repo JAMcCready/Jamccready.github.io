@@ -1,16 +1,50 @@
 :root {
     --background:#e5f5f9;
-    --primary:#99d8c9;
+    --primary:#2ca25f;
     --secondary:#003b18;
+    --font-heading:'Science Gothic', sans-serif;
+    --font-body:'Source Code Pro', monospace;
 }
 * {
     box-sizing: border-box;
 }
 
+/* Default website font */
+body {
+    font-family: var(--font-body);
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+}
+
+/* Navigation name */
+nav p {
+    font-family: var(--font-heading);
+}
+
+/* Navigation links */
+nav a {
+    font-family: var(--font-body);
+}
+
+.about-text p {
+    font-size: 18px;
+}
+
+.about-text h3 {
+    font-size: 23px;
+}
+
+.skill p {
+    font-size: 20px;
+}
+
+
 body {
     margin: 0;
     padding-top: 70px;
-    font-family: Arial, sans-serif;
     background-color: var(--background);
 }
 
@@ -82,7 +116,8 @@ section {
 }
 
 .project-card img {
-    width: 220px;
+    width: 100%;
+    height:auto;
     object-fit: contain;
     border-radius: 5px;
     align-self: center;
@@ -95,16 +130,17 @@ section {
 .project-button {
     display: inline-block;
     padding: 12px 20px;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: white;
     text-decoration: none;
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
+    
 }
 
 .project-button:hover {
-    background-color: #555;
+    background-color: var(--secondary);
 }
 
 
@@ -114,6 +150,7 @@ section {
 }
 
 .skills-container {
+    padding-top: 80px;
     width: 100%;
     overflow: hidden;
 }
@@ -163,6 +200,8 @@ section {
 }
 
 .contact-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
