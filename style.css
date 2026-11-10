@@ -136,6 +136,10 @@ section {
     flex-direction: column;
 }
 
+.project-card h3 {
+    margin-top: 0;
+}
+
 .project-card img {
     width: 100%;
     height:auto;
