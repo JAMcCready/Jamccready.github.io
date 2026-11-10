@@ -110,7 +110,7 @@ section {
 }
 
 .about-content img {
-    width: 200px;
+    width: 260px;
     height: auto;
 }
 
@@ -164,6 +164,21 @@ section {
     background-color: var(--secondary);
 }
 
+
+.resume-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.resume-button:hover {
+    background-color: var(--secondary);
+}
 
 /* Skills section */
 #skills {
