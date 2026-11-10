@@ -1,12 +1,31 @@
 :root {
-    --background:#e5f5f9;
-    --primary:#2ca25f;
-    --secondary:#003b18;
-    --font-heading:'Science Gothic', sans-serif;
-    --font-body:'Source Code Pro', monospace;
+    --background: #e5f5f9;
+    --primary: #2ca25f;
+    --secondary: #003b18;
+    --text: #000000;
+
+    --font-heading: 'Science Gothic', sans-serif;
+    --font-body: 'Source Code Pro', monospace;
 }
+
+/* Dark mode */
+:root:has(#dark-mode-toggle:checked) {
+    --background: #121c19;
+    --primary: #176b3b;
+    --secondary: #002b14;
+    --text: #ffffff;
+}
+
 * {
     box-sizing: border-box;
+}
+
+.theme-toggle {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Default website font */
@@ -31,6 +50,7 @@ nav a {
 
 .about-text p {
     font-size: 18px;
+    color: var(--text)
 }
 
 .about-text h3 {
@@ -46,6 +66,7 @@ body {
     margin: 0;
     padding-top: 70px;
     background-color: var(--background);
+    color: var(--text)
 }
 
 header {
@@ -230,6 +251,24 @@ section {
 
 .contact-item a:hover {
     opacity: 0.7;
+}
+
+/* Light mode */
+.icon-light {
+    display: block;
+}
+
+.icon-dark {
+    display: none;
+}
+
+/* Dark mode */
+:root:has(#dark-mode-toggle:checked) .icon-light {
+    display: none;
+}
+
+:root:has(#dark-mode-toggle:checked) .icon-dark {
+    display: block;
 }
 
 
